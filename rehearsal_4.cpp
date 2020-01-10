@@ -1,6 +1,17 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
-//Write compress() here.
+string compress(string x){
+    int L1 = x.size();
+    int i = 0;
+    string a ="";
+    while(i<L1){
+        a += x[i];
+        i=i+3;
+    }
+    return a;
+}
 
 int main()
 {
